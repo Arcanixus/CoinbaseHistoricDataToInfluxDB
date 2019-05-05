@@ -13,5 +13,3 @@ TODO:
 -Add functions for other historic data besides rates
 
 -Add an update routine that will download all missing data from the last datetime in the influxdb instance to datetime.today(). Create this routine to be runnable as a daemon?
-
--Add examples
