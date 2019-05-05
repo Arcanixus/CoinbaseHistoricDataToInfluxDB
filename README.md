@@ -5,7 +5,7 @@ A utility program that wraps the cbpro and influxdb python libraries. Its primar
 ######Under Construction######
 
 TODO:
--Finish base program
--Add unit tests
--Allow for all Coinbase time granularity levels
--Add functions for other historic data besides rates
+Finish base program
+Add unit tests
+Allow for all Coinbase time granularity levels
+Add functions for other historic data besides rates
