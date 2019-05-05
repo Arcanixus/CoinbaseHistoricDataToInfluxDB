@@ -16,8 +16,8 @@ import logging
 class CoinbaseHistoricDataToInfluxDB:
     """
     A utility program that wraps the cbpro and influxdb python libraries.
-    Its primary purpose is to provide a simple interface for downloading various
-    historic data from coinbase and storing that data directly into influxdb databases.
+    Its primary purpose is to provide a simple interface for streaming various
+    historic data from coinbase to an influxdb database.
     This allows one to pull the coinbase data into a local storage facility
     where it can be analyzed and manipulated more easily.
 
@@ -41,8 +41,8 @@ class CoinbaseHistoricDataToInfluxDB:
                                 coinbase_product='BTC-USD',
                                 granularity=60):
         """
-        Call this method to execute a transfer of coinbase's historic rates
-        to and influxdb instance.
+        Call this method to execute a transfer stream of coinbase's historic rates
+        to an influxdb instance.
 
         Data points stored in influxDB for this transaction are known as "candles."
         The schema for the candles is as follows
